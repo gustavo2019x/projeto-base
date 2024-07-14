@@ -16,7 +16,7 @@ export default defineConfig({
       formats: ['umd'],*/
     },
     rollupOptions: {
-      external: ['vue', 'cpf-cnpj-validator'], // Liste aqui as dependências externas
+      external: ['vue'], // Liste aqui as dependências externas
       output: {
         globals: {
           vue: 'Vue',
