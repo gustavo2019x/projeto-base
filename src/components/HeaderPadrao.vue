@@ -1,14 +1,4 @@
 <script setup lang="ts">
-
-/*import { cnpj } from 'cpf-cnpj-validator';
-import { ref } from 'vue';
-
-const cpnj_ = ref(`Gerar CNPJ`)
-function gerar() {
-  cpnj_.value = cnpj.generate()
-}
-  @click="gerar"> {{ cpnj_ }}
-*/
 defineProps<{ textoHeader: string, textoFooter: string }>()
 </script>
 
