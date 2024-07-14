@@ -1,0 +1,37 @@
+{
+  "name": "projeto-base",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mihailtd/demo-monorepo.git"
+  },
+  "module": "./dist/projeto-base.js",
+  "types": "./dist/main.d.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "@mihailtd:registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "cpf-cnpj-validator": "^1.0.3",
+    "vite-plugin-dts": "^3.9.1",
+    "vue": "^3.4.29"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.1",
+    "vue-tsc": "^2.0.21"
+  }
+}
