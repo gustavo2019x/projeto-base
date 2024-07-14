@@ -1,4 +1,5 @@
 <script setup lang="ts">
+ import { defineProps } from 'vue';
 defineProps<{ textoHeader: string, textoFooter: string }>()
 </script>
 
