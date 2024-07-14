@@ -16,11 +16,11 @@ export default defineConfig({
       formats: ['umd'],*/
     },
     rollupOptions: {
-      external: ['vue'], // Liste aqui as dependências externas
+      external: ['vue', 'cpf-cnpj-validator'], // Lista de dependências externas
       output: {
         globals: {
           vue: 'Vue',
-          axios: 'axios' // Adicione um mapeamento global para cada dependência externa
+          'cpf-cnpj-validator': 'cpfCnpjValidator' // Mapeamento global para 'cpf-cnpj-validator', se necessário
         }
       }
     }
