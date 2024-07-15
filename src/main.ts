@@ -15,3 +15,8 @@ export { HeaderPadrao };
 
 */
 
+export default {
+  install: (app: App) => {
+    app.component('HeaderPadrao', HeaderPadrao);
+  },
+};
