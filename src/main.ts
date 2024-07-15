@@ -1,4 +1,4 @@
-//import { App } from 'vue'
+import { App } from 'vue'
 import './style.css'
 //import Inicio from './Inicio.vue'
 //createApp(Inicio).mount('#app')
@@ -12,9 +12,11 @@ export { HeaderPadrao };
 // export the entire library as a plugin, so it can be installed via app.use()
 // comment this out if you don't want to install the entire library
 /*
+
+*/
+
 export default {
   install: (app: App) => {
     app.component('HeaderPadrao', HeaderPadrao);
   },
 };
-*/
