@@ -9,7 +9,7 @@ export default defineConfig({
       name: 'ProjetoBase',
       // the proper extensions will be added
       fileName: (format) => `projeto-base.${format}.js`,
-      formats: ['umd'],
+      formats: ['es', 'umd'] // Gerar ambos os formatos
       /*entry: path.resolve(__dirname, 'src/components/MeuBotao.vue'),
       name: 'MeuBotao',
       fileName: (format) => `meu-botao.${format}.js`,

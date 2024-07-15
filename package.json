@@ -1,29 +1,24 @@
 {
   "name": "projeto-base",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "0.0.6",
   "type": "module",
-  "files": ["dist"],
-  "main": "./dist/projeto-baes.cjs",
-  "module": "./dist/projeto-base.js",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/projeto-base.umd.js",
+  "module": "./dist/projeto-base.es.js",
   "exports": {
     ".": {
-      "import": "./dist/projeto-bas.js",
-      "require": "./dist/projeto-bas.cjs"
-    },
-    "./secondary": {
-      "import": "./dist/secondary.js",
-      "require": "./dist/secondary.cjs"
+      "import": "./dist/projeto-base.umd.js",
+      "require": "./dist/projeto-base.es.js"
     }
   },
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "build": "vite build"
   },
   "dependencies": {
     "cpf-cnpj-validator": "^1.0.3",
-    "vite-plugin-dts": "^3.9.1",
     "vue": "^3.4.29"
   },
   "devDependencies": {
@@ -32,7 +27,6 @@
     "postcss": "^8.4.39",
     "tailwindcss": "^3.4.4",
     "typescript": "^5.2.2",
-    "vite": "^5.3.1",
-    "vue-tsc": "^2.0.21"
+    "vite": "^5.3.1"
   }
 }
